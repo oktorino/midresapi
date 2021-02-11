@@ -1,0 +1,19 @@
+{
+    "name": "oktorino/midresapi",
+    "description": "Return consistency json structure, handling exception response, handling validation exception",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tuah Oktorino",
+            "email": "oktorino.tuah@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Oktorino\\Midresapi\\": "src/"
+        }
+    },
+    "require": {}
+}
