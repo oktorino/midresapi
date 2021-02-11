@@ -1,16 +1,16 @@
 <!-- <p align="center">
-    <img src="https://raw.githubusercontent.com/nunomaduro/collision/stable/docs/logo.png" alt="Collision logo" width="480">
+    <img src="https://raw.githubusercontent.com/oktorino/midresapi/stable/docs/logo.png" alt="Collision logo" width="480">
     <br>
-    <img src="https://raw.githubusercontent.com/nunomaduro/collision/stable/docs/example.png" alt="Collision code example" height="300">
-</p>
+    <img src="https://raw.githubusercontent.com/oktorino/midresapi/stable/docs/example.png" alt="Collision code example" height="300">
+</p> -->
 
 <p align="center">
-  <a href="https://travis-ci.org/nunomaduro/collision"><img src="https://img.shields.io/travis/nunomaduro/collision/stable.svg" alt="Build Status"></img></a>
-  <a href="https://scrutinizer-ci.com/g/nunomaduro/collision"><img src="https://img.shields.io/scrutinizer/g/nunomaduro/collision.svg" alt="Quality Score"></img></a>
-  <a href="https://packagist.org/packages/nunomaduro/collision"><img src="https://poser.pugx.org/nunomaduro/collision/d/total.svg" alt="Total Downloads"></a>
-  <a href="https://packagist.org/packages/nunomaduro/collision"><img src="https://poser.pugx.org/nunomaduro/collision/v/stable.svg" alt="Latest Stable Version"></a>
-  <a href="https://packagist.org/packages/nunomaduro/collision"><img src="https://poser.pugx.org/nunomaduro/collision/license.svg" alt="License"></a>
-</p> -->
+  <!-- <a href="https://travis-ci.org/oktorino/midresapi"><img src="https://img.shields.io/travis/oktorino/midresapi/stable.svg" alt="Build Status"></img></a> -->
+  <a href="https://scrutinizer-ci.com/g/oktorino/midrespapi"><img src="https://img.shields.io/scrutinizer/g/oktorino/midresapi.svg" alt="Quality Score"></img></a>
+  <a href="https://packagist.org/packages/oktorino/midrespapi"><img src="https://poser.pugx.org/oktorino/midresapi/d/total.svg" alt="Total Downloads"></a>
+  <a href="https://packagist.org/packages/oktorino/midrespapi"><img src="https://poser.pugx.org/oktorino/midresapi/v/stable.svg" alt="Latest Stable Version"></a>
+  <a href="https://packagist.org/packages/oktorino/midrespapi"><img src="https://poser.pugx.org/oktorino/midresapi/license.svg" alt="License"></a>
+</p>
 
 ---
 
