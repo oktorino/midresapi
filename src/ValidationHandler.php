@@ -3,7 +3,7 @@
 namespace Oktorino\Midresapi;
 
 
-trait ExceptionHandler
+trait ValidationHandler
 {
     
     /**

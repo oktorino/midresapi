@@ -4,7 +4,7 @@ namespace Oktorino\Midresapi;
 
 
 
-trait ExceptionHandler
+trait ExceptionResHandler
 {
   /**
      * Handle an incoming request.

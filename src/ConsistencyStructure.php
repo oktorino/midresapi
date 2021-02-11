@@ -9,7 +9,7 @@ use Illuminate\Http\Response;
 
 class ConsistencyStructure 
 {
-   use ExceptionHandler;
+   use ExceptionResHandler;
     
      /**
      * Handle an incoming request.
