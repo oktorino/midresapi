@@ -20,6 +20,13 @@ class ConsistencyStructure
      */
 
     
+     /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
+     */
     public function handle($request, Closure $next)
     {
         $request->headers->set('Accept', 'application/json');
@@ -42,8 +49,9 @@ class ConsistencyStructure
                 $content["data"]=$datas["data"];
 
         }else{
-
-            if($response->getOriginalContent() instanceof \Illuminate\Database\Eloquent\Collection)
+            $isModel=$response->getOriginalContent() instanceof \Illuminate\Database\Eloquent\Model;
+            $isCollection = $response->getOriginalContent() instanceof \Illuminate\Database\Eloquent\Collection;
+            if($isModel || $isCollection)
                 $content["data"]=$response->getOriginalContent();
             else
                 $content["message"]=$response->getOriginalContent();        
@@ -55,4 +63,7 @@ class ConsistencyStructure
         return $response->setContent($content);
 
     }
+
+
+
 }
