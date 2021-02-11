@@ -17,10 +17,7 @@
 Midres api , return response with consistency structure in json, 
 
 * simple use.
-* return simple collection in models ex : 
-  ```php
-    return App\User::first();
-  ```
+* simple return models,collecton and also fractal transofrmer
 * Handling exception.
 * Handling validation exception.
 
@@ -79,7 +76,7 @@ response :
     "message": "ok",
     "data": {
         "id": 1,
-        "email": "admin@crmsaba.com",
+        "email": "admin@basahinajadeh.com",
         "username": "admin",
     }
  }
@@ -98,11 +95,11 @@ response :
     "data": [
         {
             "id": 5532,
-            "email": "danu@saba.com"
+            "email": "dancuk@dummy.com"
         },
         {
             "id": 5531,
-            "email": "suwandi5353@gmail.com"
+            "email": "jancuk@dummy.com"
         }
     ]
  }
@@ -110,6 +107,52 @@ response :
  that also support return fractal in tranformer
 
 
+
+ ## Failed Response
+ * reponse mistakes
+ ```json
+ {
+    "status_code": 500,
+    "success": false,
+    "message": "Something went wrong !!!",
+    "data": null,
+    "errors": [
+        {
+            "message": "Undefined variable: undefine_var",
+            "file": "/home/tuah/apps/consistency_response/routes/api.php",
+            "line": 24
+        }
+    ]
+}
+ ```
+  * Mistake on purpose
+  ex : 
+```php
+  return response("can't be proccess");
+```
+ ```json
+{
+    "status_code": 422,
+    "success": false,
+    "message": "can't proccess",
+    "data": null
+}
+ ```
+
+* Return failed validation
+```json
+{
+    "status_code": 422,
+    "success": false,
+    "message": "The given data was invalid.",
+    "data": null,
+    "errors": {
+        "validation": [
+            "The attendance no field is required."
+        ]
+    }
+}
+```
 
 
 
