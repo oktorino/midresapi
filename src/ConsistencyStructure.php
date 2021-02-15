@@ -57,8 +57,6 @@ class ConsistencyStructure
        
         return response()->json($content);
 
-        // return $response->setContent($content);
-
     }
 
 
