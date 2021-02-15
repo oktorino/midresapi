@@ -14,7 +14,7 @@ trait ExceptionResHandler
      * @return mixed
      */
 
-    public function toException(\Exception $exception, $content)
+    public function toException($exception, $content)
     {
         $errors=[];
         $code = $content["status_code"];

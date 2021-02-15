@@ -30,6 +30,8 @@ class ConsistencyStructure
             'data'        => null,       
         ];
 
+    
+
         if($datas=is_array($response->getOriginalContent())){
             $datas =  $response->getOriginalContent();
             if(isset($datas["message"])){
@@ -38,6 +40,7 @@ class ConsistencyStructure
 
             if(isset($datas["data"]))
                 $content["data"]=$datas["data"];
+    
 
         }else{
             $isModel=$response->getOriginalContent() instanceof \Illuminate\Database\Eloquent\Model;
@@ -47,11 +50,14 @@ class ConsistencyStructure
             else
                 $content["message"]=$response->getOriginalContent();        
         }
-      
-        if($exception=$response->exception)
+        
+        if($exception=$response->exception){
             return $this->toException($exception, $content);
+        }
+       
+        return response()->json($content);
 
-        return $response->setContent($content);
+        // return $response->setContent($content);
 
     }
 
