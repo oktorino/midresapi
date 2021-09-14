@@ -55,7 +55,7 @@ class ConsistencyStructure
             return $this->toException($exception, $content);
         }
        
-        return response()->json($content);
+        return response()->json($content, $response->getStatusCode());
 
     }
 
