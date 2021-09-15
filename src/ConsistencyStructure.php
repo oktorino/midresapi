@@ -55,6 +55,10 @@ class ConsistencyStructure
             return $this->toException($exception, $content);
         }
        
+        if($request->header('accept') != 'application/json'){
+            return $response;
+         }
+
         return response()->json($content, $response->getStatusCode());
 
     }
