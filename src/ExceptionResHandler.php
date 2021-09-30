@@ -6,6 +6,7 @@ namespace Oktorino\Midresapi;
 
 trait ExceptionResHandler
 {
+    use ValidationHandler;  
   /**
      * Handle an incoming request.
      *
